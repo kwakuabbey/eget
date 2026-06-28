@@ -1,15 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EGET</title>
-</head>
-<body>
+{% extends "layout.html" %}
 
-    <h1>Welcome to EGET</h1>
+{% block title %}EGET - Buy & Sell Cars{% endblock %}
 
-    <p>Your EGET website is working successfully!</p>
+{% block content %}
 
-</body>
-</html>
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Buy • Sell • Drive with Confidence</h1>
+
+        <p>
+            Find quality vehicles from trusted sellers or get emergency roadside
+            assistance anytime, anywhere.
+        </p>
+
+        <a href="/search" class="hero-btn">Browse Cars</a>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="section">
+
+    <h2>Find Your Dream Car</h2>
+
+    <br>
+
+    <form>
+
+        <select>
+            <option>Select Brand</option>
+            <option>Toyota</option>
+            <option>Honda</option>
+            <option>Nissan</option>
+            <option>Hyundai</option>
+            <option>Kia</option>
+            <option>Mercedes-Benz</option>
+            <option>BMW</option>
+        </select>
+
+        <select>
+            <option>Year</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+        </select>
+
+        <button type="submit">Search</button>
+
+    </form>
+
+</section>
+
+
+<!-- POPULAR BRANDS -->
+
+<section class="section">
+
+<h2>Popular Brands</h2>
+
+<br>
+
+<div class="brands">
+
+Toyota • Honda • Nissan • Hyundai • Kia • BMW • Mercedes-Benz • Lexus • Ford • Audi
+
+</div>
+
+</section>
+
+
+<!-- ROADSIDE -->
+
+<section class="section">
+
+<h2>Roadside Assistance</h2>
+
+<br>
+
+<ul>
+
+<li>🔧 Mechanical Repairs</li>
+
+<li>⚡ Auto Electrical Repairs</li>
+
+<li>🛞 Tyre Replacement</li>
+
+<li>🔑 Lost Key Assistance</li>
+
+<li>🔋 Battery Jump Start</li>
+
+</ul>
+
+</section>
+
+{% endblock %}
