@@ -4,102 +4,79 @@
 
 {% block content %}
 
-<!-- HERO SECTION -->
-
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="overlay">
 
-        <h1>Buy • Sell • Drive with Confidence</h1>
+        <div class="hero-text">
 
-        <p>
-            Find quality vehicles from trusted sellers or get emergency roadside
-            assistance anytime, anywhere.
-        </p>
+            <h1>Find Your Next Car on EGET</h1>
 
-        <a href="/search" class="hero-btn">Browse Cars</a>
+            <p>
+                Buy and sell cars across Ghana.
+                Get trusted roadside assistance from mechanics,
+                auto electricians, tyre specialists and key experts.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="/search" class="btn-yellow">
+                    Browse Cars
+                </a>
+
+                <a href="/add-car" class="btn-black">
+                    Sell Your Car
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- SEARCH -->
+<section class="search-box section">
 
-<section class="section">
+<h2>Search Vehicles</h2>
 
-    <h2>Find Your Dream Car</h2>
+<form>
 
-    <br>
+<select id="brand">
 
-    <form>
+<option>Select Brand</option>
 
-        <select>
-            <option>Select Brand</option>
-            <option>Toyota</option>
-            <option>Honda</option>
-            <option>Nissan</option>
-            <option>Hyundai</option>
-            <option>Kia</option>
-            <option>Mercedes-Benz</option>
-            <option>BMW</option>
-        </select>
+</select>
 
-        <select>
-            <option>Year</option>
-            <option>2026</option>
-            <option>2025</option>
-            <option>2024</option>
-            <option>2023</option>
-            <option>2022</option>
-            <option>2021</option>
-        </select>
+<select id="model">
 
-        <button type="submit">Search</button>
+<option>Select Model</option>
 
-    </form>
+</select>
 
-</section>
+<select id="year">
 
+<option>Select Year</option>
 
-<!-- POPULAR BRANDS -->
+</select>
 
-<section class="section">
+<select>
 
-<h2>Popular Brands</h2>
+<option>Colour</option>
 
-<br>
+<option>Black</option>
+<option>White</option>
+<option>Silver</option>
+<option>Grey</option>
+<option>Blue</option>
+<option>Red</option>
 
-<div class="brands">
+</select>
 
-Toyota • Honda • Nissan • Hyundai • Kia • BMW • Mercedes-Benz • Lexus • Ford • Audi
+<button>Search</button>
 
-</div>
-
-</section>
-
-
-<!-- ROADSIDE -->
-
-<section class="section">
-
-<h2>Roadside Assistance</h2>
-
-<br>
-
-<ul>
-
-<li>🔧 Mechanical Repairs</li>
-
-<li>⚡ Auto Electrical Repairs</li>
-
-<li>🛞 Tyre Replacement</li>
-
-<li>🔑 Lost Key Assistance</li>
-
-<li>🔋 Battery Jump Start</li>
-
-</ul>
+</form>
 
 </section>
 
